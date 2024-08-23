@@ -12,9 +12,9 @@
     <section id="landing__page">
         <nav>
             <figure class="logo__wrapepr">
-                <img id="logo" src="./assets/whitelogo.39850b27.png" alt="Blinker Logo">
+                <img id="logo" src="./assets/whitelogo.39850b27.png" alt="Digimon Logo">
             </figure>
-                <img class="nav__background" src="./assets/PokemonScarletVioletBanner.jpg" alt="">
+                <img class="nav__background" src="./assets/Banner.jpg" alt="">
             <ul class="nav__link--list">
                 <li class="nav__link ">
                     <a href="#" class="nav__link--anchor">Home</a>
@@ -30,9 +30,34 @@
         <header>
             <h1 class="title">Browse our database</h1>
             <div class="user__search">
-                <input type="text" placeholder="Search by pokemon">
+                <input type="text" placeholder="Search by Digimon" onchange="onSearchChange(event)">
             </div>
         </header>
     </section>
+    <section id="pokemon">
+        <ul class="sort__list">
+            <li class="sort_param">
+                Sort By:
+            </li>
+            <li class="sort__param">
+                <a href="" class="param__anchor">Name</a>
+            </li>
+            <li class="sort__param">
+                <a href="" class="param__anchor">Level</a>
+            </li>
+        </ul>
+        <div class="mon__list">
+            <div class="card__wrapper">
+                <div class="pokemon-card">
+                    <h3>Name</h3>
+                    <figure class="sprite">
+                        <img src="" alt="">
+                    </figure>
+                    <p class="level">level</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+<script src="index.js"></script>
 </html>
