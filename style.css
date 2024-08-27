@@ -116,4 +116,5 @@ header {
 .param__anchor {
     text-decoration: none;
     color: #242424;
+    cursor: pointer;
 }

@@ -23,7 +23,7 @@ function monHTML(name) {
 }
 
 function sortListByName(event, mon, monData, monListEl) {
-    mon.sort()
+    mon.sort((a, b) => a.name - b.name)
     monListEl.innerHTML = monData.map((name) =>monHTML(name)).join('')
 }
 
