@@ -25,3 +25,7 @@ function monHTML(name) {
 function onSearchChange(event) {
     console.log(event)
 }
+
+function sortListByName(event) {
+    
+}

@@ -45,6 +45,7 @@ nav {
     color: #242424;
     font-weight: 700;
 }
+
 .contact__button {
     color: white;
     border: solid 1px black;
@@ -61,6 +62,9 @@ header {
 }
 .title {
     font-size: 42px;
+}
+.user__search {
+    padding-top: 8px;
 }
 .user__search input {
     height: 50px;
@@ -100,4 +104,16 @@ header {
 .card__wrapper {
     width: calc(100%/4);
     padding: 12px;
+}
+.sort__list {
+    display: flex;
+}
+.sort__param {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 12px;
+}
+.param__anchor {
+    text-decoration: none;
+    color: #242424;
 }
