@@ -22,10 +22,12 @@ function monHTML(name) {
     </div>`
 }
 
-function onSearchChange(event) {
-    console.log(event)
+function sortListByName(event, mon, monData, monListEl) {
+    mon.sort()
+    monListEl.innerHTML = monData.map((name) =>monHTML(name)).join('')
 }
 
-function sortListByName(event) {
-    
+function sortListByLevel(event, mon, monData, monListEl) {
+    mon.sort((a, b) => a.level - b.level)
+    monListEl.innerHTML = monData.map((name) =>monHTML(name)).join('')
 }
