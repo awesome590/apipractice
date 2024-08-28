@@ -6,7 +6,18 @@ async function main() {
     const monData = await mon.json()
     const monListEl = document.querySelector('.mon__list')
     monListEl.innerHTML = monData.map((name) =>monHTML(name)).join('')
+    
+    window.sortListByName = function(event) {
+    monData.sort((a, b) => a.name.localeCompare(b.name))
+    monListEl.innerHTML = monData.map((name) =>monHTML(name)).join('')
+    }
+    
+    window.sortListByLevel = function(event) {
+    monData.sort((a, b) => a.level.localeCompare(b.level))
+    monListEl.innerHTML = monData.map((name) =>monHTML(name)).join('')
+    }
 }
+
 
 main()
 
@@ -20,14 +31,4 @@ function monHTML(name) {
             <p class="level">${name.level}</p>
         </div>
     </div>`
-}
-
-function sortListByName(event, mon, monData, monListEl) {
-    mon.sort((a, b) => a.name - b.name)
-    monListEl.innerHTML = monData.map((name) =>monHTML(name)).join('')
-}
-
-function sortListByLevel(event, mon, monData, monListEl) {
-    mon.sort((a, b) => a.level - b.level)
-    monListEl.innerHTML = monData.map((name) =>monHTML(name)).join('')
 }
