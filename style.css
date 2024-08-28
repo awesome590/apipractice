@@ -44,6 +44,7 @@ nav {
     font-size: 24px;
     color: #242424;
     font-weight: 700;
+    cursor: not-allowed;
 }
 
 .contact__button {
@@ -73,6 +74,7 @@ header {
     padding: 0 10px;
     text-align: center;
     font-size: 24px;
+    cursor: not-allowed;
 }
 /*Pokemon*/
 #pokemon {
@@ -107,6 +109,7 @@ header {
 }
 .sort__list {
     display: flex;
+    margin-bottom: 16px;
 }
 .sort__param {
     text-decoration: none;
@@ -117,4 +120,59 @@ header {
     text-decoration: none;
     color: #242424;
     cursor: pointer;
+}
+@media (max-width: 768px) {
+    #landing__page {
+        height: 200px;
+    }
+    nav {
+        padding-top: 32px;
+        height: 50px;
+    }
+    #logo {
+        max-height: 32px;
+        height: 100%;
+        margin-left: 20px;
+        margin-right: 12px;
+    }
+    .nav__link {
+        margin: 0 8px;
+    }
+    .nav__link--home {
+        display: none;
+    }
+    .nav__link--anchor {
+        font-size: 20px;
+    }
+    .nav__background {
+        height: 200px;
+    }
+    header {
+        margin: 22px;
+    }
+    .sort__list {
+        height: 100%;
+        margin-top: 4px;
+        margin-left: 12px;
+    }
+    .card__wrapper {
+        width: calc(100% / 3);
+    }
+}
+@media (max-width: 480px) {
+    #landing__page {
+        height: 150px;
+    }
+    .contact {
+        display: none;
+    }
+    .title {
+        display: none;
+    }
+    .nav__background {
+        height: 150px;
+    }
+    .card__wrapper {
+        width: calc(100% / 2);
+    }
 }

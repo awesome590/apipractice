@@ -16,6 +16,26 @@ async function main() {
     monData.sort((a, b) => a.level.localeCompare(b.level))
     monListEl.innerHTML = monData.map((name) =>monHTML(name)).join('')
     }
+
+    /*const searchInput = document.getElementById('searchInput')
+    searchInput.addEventListener('keyup', e => {
+        const searchString = e.target.value.toLowerCase()
+        const filteredMon = monData.filter(name => {
+            return (
+                name.name.toLowerCase().includes(searchString)
+            )
+        })
+        monListEl.innerHTML = monData.map((filteredMon) =>
+            `<div class="card__wrapper">
+        <div class="pokemon-card">
+            <h3>${filteredMon.name}</h3>
+            <figure class="sprite">
+                <img src="${filteredMon.img}" alt="">
+            </figure>
+            <p class="level">${filteredMon.level}</p>
+        </div>
+    </div>`)
+    })*/
 }
 
 
