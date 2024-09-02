@@ -66,6 +66,7 @@ header {
 }
 .user__search {
     padding-top: 8px;
+    position: relative;
 }
 .user__search input {
     height: 50px;
@@ -82,6 +83,10 @@ header {
     border: solid 1px black;
     background-color: black;
     border-radius: 44px;
+    position: absolute;
+    top: 0;
+    right: 4px;
+    bottom: 4px;
 }
 .reset a {
     color: white;
