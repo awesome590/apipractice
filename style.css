@@ -76,22 +76,6 @@ header {
     text-align: center;
     font-size: 24px;
 }
-.reset {
-    font-size: 24px;
-    margin-top: 12px;
-    padding: 8px 20px;
-    border: solid 1px black;
-    background-color: black;
-    border-radius: 44px;
-    position: absolute;
-    top: 0;
-    right: 4px;
-    bottom: 4px;
-}
-.reset a {
-    color: white;
-    text-decoration: none;
-}
 /*Pokemon*/
 #pokemon {
     width: 100%;
