@@ -24,7 +24,7 @@ async function main() {
     };
     window.filterResults = function (event) {
         const value = event.target.value;
-        displayData = monData.filter((item) => item.name === value);
+        displayData = monData.filter((item) => item.name.toLowerCase().includes(value))
         processArray(displayData);
         monHTML();
     };
